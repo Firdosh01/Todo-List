@@ -9,7 +9,6 @@ body{
     background: linear-gradient(135deg, #8052ec, #d161ff);
 }
 .container{
-    border: 2px solid white;
     width: 40%;
     min-width: 450px;
     position: absolute;
@@ -55,17 +54,6 @@ body{
     color: white;
     cursor: pointer;
 }
-
-
-#tasks{
-    background-color: #ffffff;
-    padding: 30px 20px;
-    margin-top: 60px;
-    border-radius: 10px;
-    width: 100%;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
-    position: relative;
-}
 .task{
     background-color: #ffffff;
     height: 50px;
@@ -81,13 +69,9 @@ body{
     font-size: 1rem;
     font-weight: 500;
 }
-.task button{
-    background-color: #8052ec;
-    color:  #ffffff;
-    height: 30px;
-    width: 30px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
+.completed{
+    text-decoration: line-through;
+}
+#task-list{
     cursor: pointer;
 }
