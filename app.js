@@ -2,10 +2,14 @@ document.querySelector('#push').onclick = function () {
     if (document.querySelector('#newtask input').value.length == 0) {
         alert("Please Enter a Task")
     } else {
-        document.querySelector('#tasks').innerHTML += `<div class="tasks">
-        <span id="taskname">
-        ${document.querySelector('#newtasks input').value}
-        </span>    
-        </div>`
+        document.querySelector('#tasks').innerHTML 
+        += `<div class="task">
+                 <span id="taskname">
+                      ${document.querySelector('#newtask input').value}
+                 </span>    
+                 <button class= "delete">
+                 <ion-icon name="trash-outline"></ion-icon>
+                 </button>
+            </div>` ;
     }
 }
